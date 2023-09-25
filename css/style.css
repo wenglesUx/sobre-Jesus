@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Italiana&display=swap');;
+body{
+    overflow-x: hidden;
+}
+.fgrid{
+    overflow: hidden;
+   
+}
+.fgrid .col{
+    overflow: hidden;
+}
+.frame-grid{
+    width:auto;
+    height: 20rem;
+    object-fit: cover !important;
+    object-position: center !important;
+    overflow: hidden;
+}
+.frame-grid img{
+height: 100%;
+width: 100%;
+object-fit: cover !important;
+object-position: center !important;
+}
+.g-content{
+    text-align: justify;
+}
+.navbar{
+    transition: .8s ease-in-out;
+    background-color: rgb(27, 23, 23);
+    height: 80px;
+}
+
+ul li{
+    width: 100%;
+    
+    padding: 5px;
+}
+li a{
+ 
+  width: 100%;  
+}
+.mastehead {
+  backdrop-filter: grayscale();
+}
+
+@media (max-width:768px){
+ul{
+    font-size: 12px;
+    gap:1rem;
+
+}
+#dd-menu{
+    right:20% !important;
+    opacity:1 !important;
+}
+.navbar-nav{
+    left: 100% ;
+   visibility: hidden ;
+  
+}
+.title-header {
+   
+    width: 80% !important;
+   
+    top: 17% !important;
+margin-left:10px
+}
+}
+@media (max-width:425px){
+  
+ 
+    .sinais{
+        height: 100% !important;
+    
+    }
+    .galery{
+        flex-direction: column; 
+        height: 700px !important;
+    }
+    .row{
+        padding:0 20px;
+        text-align: justify !important;
+    }
+    #info-area {
+        width: 80% !important;
+    }
+    #span-main {
+    font-size: 1.5rem !important;
+    }
+    .footer-top{
+        padding:0 10px;
+    }
+    .lead {
+        font-size: 15px ;
+       
+    }
+
+
+}
+@media (max-width:320px){
+    #info-area {
+    width: 88% !important;}
+        p, span {
+    font-family: 'Amiko', sans-serif;
+    font-size: 10px !important;
+}
+}
+.menutoggler{
+   visibility: visible;
+    background-color: red;
+    height: auto;
+    flex-direction: column !important;
+    padding: 20px 10px;
+    transition: .1s linear !important;
+}
+li a:hover{
+    background-color: white;
+    border-radius:15px;
+    color: black !important;
+    height: 95%;
+   
+}
+#btnM{
+    font-size: 2rem;
+    top:0;
+    position:absolute;
+    right:0;
+    margin:10px;
+    z-index: 99;
+    position: fixed;
+
+}
+#dd-menu{
+    font-size: 2rem;
+    top:0;
+    position:absolute;
+    right:5%;
+    margin:10px;
+    z-index: 2;
+    position: fixed;
+    transition:.8s linear;
+    opacity:0;
+}
+
+.navbar-nav{
+    background-color:rgb(27, 23, 23);
+    backdrop-filter:blur(10px);
+    position:absolute;
+    
+    left: 0;
+    top: 0;
+    transition:.8s ease-in-out;
+    z-index: -4;
+    
+    
+
+}
+.slideMenu{
+    left:100% 
+}
+.slideout{
+    left:0%;
+}
+li{
+    
+   
+    display:flex;
+}
+li a{
+    color:white
+}
+h2{
+    font-family: 'Italiana', serif;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+p,span{
+    font-family: 'Amiko', sans-serif;
+    font-size:15px;
+}
+#section-sub-title{
+    font-size:20px;
+    font-weight:bold;
+  
+}
+.container{
+    padding: 3rem 0;
+}
+.page-section{
+  height:auto;
+    overflow-y: hidden;
+    backdrop-filter: grayscale();
+}
+.cover-page{
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+.filter{
+  position: absolute;
+  /* background-color:rgb(37, 20, 20) ; */
+  z-index:-1;
+  top:0;
+  backdrop-filter:blur(1px);
+  background-image: linear-gradient(to left, rgb(37, 20, 20), rgb(37, 20, 20));
+  opacity: 0.5;
+
+  
+}
+.info-area{
+
+}
+.info-content{
+    height:300px;
+    
+    background-position:right;
+    position: relative;
+    overflow: hidden;
+    
+    /* background-color: #6d5948; */
+}
+#back-cover{
+    flex: 1 50%;
+    background-image: url(/images/cordeiro);
+    background-size: cover;
+  
+    
+}
+#info-area{
+    z-index: 2;
+    position: absolute;
+    width: 40%;
+    padding:20px
+    
+    
+}
+#info-area span{
+    font-family: 'Italiana', serif;
+    color:white;
+}
+#span-main{
+    font-size:2rem
+}
+.info-area p{
+    font-size: 10px;
+    color:white;
+    font-weight: lighter;
+    justify-content: end;
+}
+#info-area hr{
+    height:3px;
+    background-color: white;
+    border: none;
+}
+.filter-c{
+    height: 100%;
+    position:absolute;
+    top:0;
+    background-image: linear-gradient(to right, #6d5948, #6d5948, transparent, transparent);
+
+
+}
+header{
+    height: 100vh;
+    /* background-image:url(https://i.etsystatic.com/38922439/r/il/187699/4628177528/il_794xN.4628177528_lhsm.jpg); */
+   
+    background-image:url( https://img.freepik.com/fotos-premium/jesus-anda-sobre-a-agua-jesus-anda-sobre-o-mar-belo-por-do-sol-generative-ai_888418-402.jpg?w=900);
+    background-position: center;
+    background-size: cover;
+}
+.title-header{
+    position:absolute;
+    text-align: justify;
+    width:30%;
+    font-size:25px;
+    top:30%;
+   
+}
+.header-info{
+    position: absolute;
+    bottom:30%;
+    left:0%;
+    right:0%;
+
+}
+hr{
+    width:50%
+}
+.galery{
+    display:flex;
+    width: 100%;
+    height: 500px;
+
+}
+.portrait {
+    aspect-ratio: 9/16;
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    object-fit:cover;
+    object-position: center;
+    overflow: hidden;
+    position: relative;
+}
+.portrait img{
+    height:100% ;
+    width: 100%;
+}
+.portrait:hover{
+    flex:1 1 300px;
+}
+.portrait:hover>.description{
+    opacity: 1;
+    transition: 1.2s;
+}
+.description{
+    position: absolute;
+    opacity:0;
+    z-index: 99;
+    top: 0;
+    backdrop-filter: blur(5px);
+}
+/*
+#miracle-1{
+    background-image: url(/images/Vinho-scaled.jpeg);
+    background-position: left;
+    background-size: cover;
+
+}
+#miracle-2{
+    background-image: url(/images/o-centuriao-de-cafarnaum.jpg);
+    background-position: left;
+    background-size: cover;
+
+}
+#miracle-3{
+    background-image: url(/images/Vinho-scaled.jpeg);
+    background-position: left;
+    background-size: cover;
+
+} */
+
+ .galery img{
+    aspect-ratio: 9/16;
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    transition: 0.5s;
+
+
+}
+.galery, img:hover{
+    flex:1 1 300px;
+} 
+#sobre{
+    background-image:url(https://static.wixstatic.com/media/2898c0_a3691f484129475394faed5af029113d~mv2.jpg/v1/fill/w_740,h_419,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2898c0_a3691f484129475394faed5af029113d~mv2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    position: relative;
+
+
+
+}
+
+#sobre p{
+    color:rgb(255, 255, 255);
+    position:relative;
+    font-weight:600;
+    
+}
+.container{
+
+}
+
+#cristo{
+    background-image:url(/images/frame\ 4-1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 30px 0;
+    position:relative;
+  
+    
+}
+#cordeiro{
+ 
+}
+#nascer{
+    background-image:url(https://evangelhoperdido.com.br/wp-content/uploads/2020/09/imergindo.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale();
+}
+
+#hoje .row{
+    margin-top: 10%;
+}
+#hoje{
+    position:relative;
+    overflow:hidden
+}
+#wave{
+position:absolute;
+z-index: -1;
+top: 0;
+filter: drop-shadow(5px 5px 4px #8f8f8f);
+}
+
+
+.footer-top{
+    background-color: #d0b7a2;
+   
+}
+.footer-bottom{
+    background-color: #6d5948;
+    height: 50px;
+
+}
+.tst{align-self: flex-end;
+    height:1px;
+    width:100%;
+    background-color: white;
+    margin-top: 10rem;
+   
+}
+/* linha de cronologia */
+.box{
+	display:flex;
+	align-items:center;
+	position:relative;
+	margin-top:9rem;
+    width: 100%;
+    color:white;
+    font-family: 'Italiana', serif;
+    text-transform:uppercase;
+    
+}
+.barr{
+	height:1px;
+	width:5vw;
+	background-color:white;
+    align-items: center;
+    justify-content: center;
+display: flex;
+	
+overflow: hidden; 
+	cursor:pointer;
+    z-index: 10;
+    transition: .5s;
+	
+}
+.circles{
+
+
+	width: 100%;
+	display:flex;
+	justify-content:space-around;
+    transition: .1s;
+   opacity: 0; 
+}
+.circle{
+	height:10px;
+width:10px;
+	background-color:white;
+	border-radius:50%;
+    position: relative;
+  display: flex;
+
+  justify-content: center;
+ 
+}
+.barr:hover{
+	width:100vw;
+    overflow: visible;
+}
+.barr:hover> .circles{
+    opacity: 1;
+}
+#pilar{
+    height: 20px;
+    width:1px;
+    background-color: rgb(159, 154, 154);
+   
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    width:200px;
+}
+
+/* fomulario */
+#submitButton{
+    
+    margin-top: 10px;
+    background-color: #8f8f8f;
+    outline: none;
+    border:none;
+}
