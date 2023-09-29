@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Italiana&display=swap');;
+/* width */
+
+
+.page-section{
+    height: 100vh ;
+    background-color: yellow !important;
+    overflow-y: hidden;
+    backdrop-filter: grayscale();
+    padding-top:65px !important;;
+}
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
 .fgrid{
-    overflow: hidden;
+    
+       margin: 30px 0;
+        height: 100vh;
+  
+       
+    
    
 }
 .fgrid .col{
@@ -16,6 +33,9 @@ body{
     object-position: center !important;
     overflow: hidden;
 }
+h3{
+    font-family: 'Italiana', serif;
+}
 .frame-grid img{
 height: 100%;
 width: 100%;
@@ -25,30 +45,45 @@ object-position: center !important;
 .g-content{
     text-align: justify;
 }
+
 .navbar{
-    transition: .8s ease-in-out;
-    background-color: rgb(27, 23, 23);
-    height: 80px;
+    background-color:rgb(27, 23, 23);
+  height: 70px;
+position: fixed;
+transition:.8s ease-in-out;
+
+}
+.navbar-brand{
+    height:60px;
+    width:60px;
 }
 
-ul li{
-    width: 100%;
-    
-    padding: 5px;
+.menu-area ul{
+
+
 }
-li a{
- 
-  width: 100%;  
-}
+
 .mastehead {
   backdrop-filter: grayscale();
 }
 
+.cordeiro{
+    margin: 20px 0;
+}
 @media (max-width:768px){
+.page-section{
+    height: auto !important;
+}
+.sobre{
+    height: auto !important;
+}
 ul{
     font-size: 12px;
     gap:1rem;
 
+}
+li a {
+    width:200px
 }
 #dd-menu{
     right:20% !important;
@@ -69,7 +104,7 @@ margin-left:10px
 }
 @media (max-width:425px){
   
- 
+
     .sinais{
         height: 100% !important;
     
@@ -99,6 +134,9 @@ margin-left:10px
 
 }
 @media (max-width:320px){
+    .page-section h2{
+        font-size: 2.2rem !important;
+     }
     #info-area {
     width: 88% !important;}
         p, span {
@@ -120,6 +158,13 @@ li a:hover{
     color: black !important;
     height: 95%;
    
+}
+.ativo{
+   /* border:3px solid white; */
+   background-color: white;
+    border-radius:15px;
+    color: black !important;
+    transition:.6s ease-in-out
 }
 #btnM{
     font-size: 2rem;
@@ -143,19 +188,7 @@ li a:hover{
     opacity:0;
 }
 
-.navbar-nav{
-    background-color:rgb(27, 23, 23);
-    backdrop-filter:blur(10px);
-    position:absolute;
-    
-    left: 0;
-    top: 0;
-    transition:.8s ease-in-out;
-    z-index: -4;
-    
-    
 
-}
 .slideMenu{
     left:100% 
 }
@@ -184,14 +217,7 @@ p,span{
     font-weight:bold;
   
 }
-.container{
-    padding: 3rem 0;
-}
-.page-section{
-  height:auto;
-    overflow-y: hidden;
-    backdrop-filter: grayscale();
-}
+
 .cover-page{
     /* position: absolute; */
     left: 0;
@@ -265,12 +291,12 @@ p,span{
 }
 header{
     height: 100vh;
-    /* background-image:url(https://i.etsystatic.com/38922439/r/il/187699/4628177528/il_794xN.4628177528_lhsm.jpg); */
-   
     background-image:url( https://img.freepik.com/fotos-premium/jesus-anda-sobre-a-agua-jesus-anda-sobre-o-mar-belo-por-do-sol-generative-ai_888418-402.jpg?w=900);
     background-position: center;
     background-size: cover;
 }
+
+
 .title-header{
     position:absolute;
     text-align: justify;
@@ -356,6 +382,23 @@ hr{
 .galery, img:hover{
     flex:1 1 300px;
 } 
+.across,
+.sinais,
+.sobre,
+.cristo,
+.nascer,
+.hoje
+{
+    height: 100vh ;
+    padding-top: 65px;
+    gap:50px
+}
+.sinais{
+    height: 100vh;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
 #sobre{
     background-image:url(https://static.wixstatic.com/media/2898c0_a3691f484129475394faed5af029113d~mv2.jpg/v1/fill/w_740,h_419,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2898c0_a3691f484129475394faed5af029113d~mv2.jpg);
     background-position: center;
@@ -373,9 +416,7 @@ hr{
     font-weight:600;
     
 }
-.container{
 
-}
 
 #cristo{
     background-image:url(/images/frame\ 4-1.jpg);
@@ -383,25 +424,25 @@ hr{
     background-size: cover;
     margin: 30px 0;
     position:relative;
+    height: 100vh;
   
     
 }
-#cordeiro{
- 
-}
+
 #nascer{
     background-image:url(https://evangelhoperdido.com.br/wp-content/uploads/2020/09/imergindo.jpg);
     background-position: center;
     background-size: cover;
     filter: grayscale();
+    height: 100vh;
 }
 
-#hoje .row{
-    margin-top: 10%;
-}
+
 #hoje{
     position:relative;
-    overflow:hidden
+    overflow:hidden;
+    height: 100vh;
+    padding-top:40px
 }
 #wave{
 position:absolute;

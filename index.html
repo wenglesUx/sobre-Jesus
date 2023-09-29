@@ -12,27 +12,27 @@
 <body>
 
     <nav class="navbar navbar-espand-lg text-uppercase fixed-top d-flex align-items-center justify-content-center w-100 " id="main-nav">
-        <!-- <a href="" class="navbar-brand"> brand page</a> -->
+        <i class="fa-solid fa-caret-down" style="color: #ffffff;" id="dd-menu"></i>
         <i class="fa-solid fa-bars-staggered fa-rotate-180" style="color: #ffffff;" id="btnM"></i>
-        <div class="menu-area">
-           
-
-            <i class="fa-solid fa-caret-down" style="color: #ffffff;" id="dd-menu"></i>
-            
+        <a class="navbar-brand " href="#home"> <img class="h-100" src="/images/cruz.png" alt=""></a>
+        <div class="menu-area ">
+            <ul class="d-flex navbar-nav flex-row  justify-content-center  ">
+                <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#across" > atraves da biblia</a></li>
+                <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#sinais"> seus sinais</a></li>
+                <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#sobre"> conhecendo jesus</a></li>
+                <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#cristo"> seu sacrificio</a></li>
+                <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#nascer"> novo nascimento</a></li>
+                <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#hoje"> esperando por jesus</a></li>
+                <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#footer"> contato</a></li>
+            </ul>
         </div>
-     <ul class="d-flex navbar-nav flex-row  justify-content-center w-100 ">
-        <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="" > atraves da biblia</a></li>
-        <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href=""> seus sinais</a></li>
-        <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href=""> conhecendo jesus</a></li>
-        <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href=""> seu sacrificio</a></li>
-        <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href=""> novo nascimento</a></li>
-        <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href=""> esperando por jesus</a></li>
-        <li class=" nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href=""> contato</a></li>
-     </ul>
-    </nav>
-    <header class="mastehead text-white">
         
-        <div class="container" style="">
+   
+    </nav>
+
+    <header class="mastehead text-white" id="home">
+        
+        <div class="container" >
             <h1 class="title-header">No princípio era o Verbo,
                 e o Verbo estava com Deus,
                 e o Verbo era Deus. 
@@ -47,7 +47,7 @@
         
         
     </header>
-    <section class="page-section across mb-6" id="across" >
+    <section class="page-section across mb-6 page-mk" id="across" >
         <h2 class="text-center"> Jesus Atraves Da Biblia</h2>
         <div class="container">
            
@@ -63,7 +63,7 @@
         </div>
 
     </section>
-    <section class="page-section sinais mb-0 " id="sinais" style="height: 100vh;">
+    <section class="page-section sinais mb-0 page-mk" id="sinais" style="height: 100vh;">
         <h2 class="text-center"> Os Sinais De Jesus</h2>
         <div class="container">
            
@@ -71,7 +71,7 @@
                 <div class="portrait" id="miracle-1">
                     <img src="/images/Vinho-scaled.jpeg" alt="">
                     <div class="description text-center w-100 h-100 mb-4 text-white">
-                        <h2>miracle</h2>
+                        <h2>Agua em vinho</h2>
                         <p>  Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Aliquam at soluta quas 
                              voluptatum. Fuga neque nemo nostrum, 
@@ -84,7 +84,7 @@
                 <div class="portrait" id="miracle-2">
                     <img src="/images/o-centuriao-de-cafarnaum.jpg" alt="">
                     <div class="description text-center w-100 h-100 mb-4 text-white">
-                        <h2>miracle</h2>
+                        <h2>A cura do filho do oficial</h2>
                         <p>  Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Aliquam at soluta quas 
                              voluptatum. Fuga neque nemo nostrum, 
@@ -97,7 +97,7 @@
                 <div class="portrait" id="miracle-3">
                     <img src="/images/tanque.jpg" alt="">
                     <div class="description text-center w-100 h-100 mb-4 text-white">
-                        <h2>miracle</h2>
+                        <h2>Paralitico de betesda</h2>
                         <p>  Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Aliquam at soluta quas 
                              voluptatum. Fuga neque nemo nostrum, 
@@ -110,7 +110,7 @@
                 <div class="portrait" id="miracle-4">
                     <img src="/images/paes.png" alt="">
                     <div class="description text-center w-100 h-100 mb-4 text-white">
-                        <h2>miracle</h2>
+                        <h2>multiplicação dos pães e peixes</h2>
                         <p>  Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Aliquam at soluta quas 
                              voluptatum. Fuga neque nemo nostrum, 
@@ -123,7 +123,7 @@
                 <div class="portrait" id="miracle-5">
                     <img src="/images/walking-on-water.jpg" alt="">
                     <div class="description text-center w-100 h-100 mb-4 text-white">
-                        <h2>miracle</h2>
+                        <h2>Jesus anda sobre o mar</h2>
                         <p>  Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Aliquam at soluta quas 
                              voluptatum. Fuga neque nemo nostrum, 
@@ -136,7 +136,7 @@
                 <div class="portrait" id="miracle-6">
                     <img src="/images/cego.jpg" alt="">
                     <div class="description text-center w-100 h-100 mb-4 text-white">
-                        <h2>miracle</h2>
+                        <h2>a cura do cego de nascença</h2>
                         <p>  Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Aliquam at soluta quas 
                              voluptatum. Fuga neque nemo nostrum, 
@@ -149,7 +149,7 @@
                 <div class="portrait" id="miracle-7">
                     <img src="/images/lazaro-e1551092772585.jpeg" alt="">
                     <div class="description text-center w-100 h-100 mb-4 text-white">
-                        <h2>miracle</h2>
+                        <h2>A ressureição de lazaro</h2>
                         <p>  Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Aliquam at soluta quas 
                              voluptatum. Fuga neque nemo nostrum, 
@@ -171,7 +171,7 @@
 
         </div>
     </section>
-    <section class="page-section sobre mb-0" id="sobre">
+    <section class="page-section sobre mb-0 page-mk" id="sobre">
         <div class="cover-page">
         <h2 class="text-center text-white">eu sou Jesus</h2>
         <div class="container d-flex flex-column align-items-center">
@@ -283,7 +283,7 @@
     
 
     </section>
-    <section class="page-section cristo mb-0 text-white" id="cristo">
+    <section class="page-section cristo mb-0 text-white page-mk" id="cristo">
         
         <div class="cover-page">
         <h2 class="text-center">o que cristo fez por nos</h2>
@@ -301,7 +301,7 @@
     </div>
         <div class="filter w-100 h-100"></div>
     </section>
-    <section class="page-section sobre mb-0 text-white h-100" id="nascer">
+    <section class="page-section sobre mb-0 text-white  page-mk" id="nascer">
         <div class="cover-page h-100">
         <h2 class="text-center">voce precisa nascer denovo</h2>
         <div class="container">
@@ -319,7 +319,7 @@
      <div class="filter w-100 h-100"></div>
         
     </section>
-    <section class="page-section hoje mb-0" id="hoje">
+    <section class="page-section hoje mb-0 page-mk" id="hoje">
         <h2 class="text-center ">esperando jesus para hoje</h2>
         <div class="container">
             <div class="row">
@@ -334,17 +334,17 @@
             
         </div>
         <!-- <img src="/images/Vector.png" id="wave" alt=""> -->
-        <svg xmlns="http://www.w3.org/2000/svg" id="wave" viewBox="0 0 1440 320">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" id="wave" viewBox="0 0 1440 320">
             <path fill="gray" fill-opacity="1" d="M0,160L120,181.3C240,203,480,245,720,234.7C960,224,1200,160,1320,128L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
-        </svg>
+        </svg> -->
 
     </section>
-    <section class="d-flex justify-content-center align-items-center fgrid" id="fgrid">
+    <section class="page-section d-flex justify-content-center align-items-center fgrid" id="fgrid">
     
         <div class="container">
             <div class="row text-center ">
                 <div class="col-lg-6 ms-auto">
-                    <h3>titulo</h3>
+                    <h3 class="text-uppercase">titulo</h3>
                     
                     <p class="lead g-content">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur commodi eius, amet ipsum fugit rem corporis ipsam voluptate atque quos consectetur nihil error, enim tenetur sequi cupiditate necessitatibus itaque?
@@ -380,7 +380,7 @@
        
 
     </section>
-    <footer class="page-section footer d-flex flex-column" id="footer">
+    <footer class="page-section footer d-flex flex-column page-mk" id="footer">
         <div class="footer-top w-100">
             <div class="container mb-2">
                 <h2 class=" text-center">nos mande uma mensagem</h2>
