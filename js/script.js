@@ -30,9 +30,11 @@ function destacarItemMenu() {
             // Se a seção estiver visível na janela
             menuItems.forEach((item) => item.classList.remove("ativo"));
             menuItems[index].classList.add("ativo");
+         
           
         } else{
             menuItems[index].classList.remove("ativo");
+            
         }
     });
 }
