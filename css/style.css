@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Italiana&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Comfortaa:wght@300;400&family=Italiana&display=swap');
 /* width */
-
 
 .page-section{
     height: 100vh ;
-    background-color: yellow !important;
     overflow-y: hidden;
     backdrop-filter: grayscale();
     padding-top:65px !important;;
 }
+
 body{
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -35,6 +34,7 @@ body{
 }
 h3{
     font-family: 'Italiana', serif;
+    text-shadow: 1px 1px 5px black;
 }
 .frame-grid img{
 height: 100%;
@@ -65,10 +65,17 @@ transition:.8s ease-in-out;
 
 .mastehead {
   backdrop-filter: grayscale();
+  box-shadow: 2px 2px 10px gray;
+
 }
 
 .cordeiro{
     margin: 20px 0;
+}
+@media (max-width:1024px){
+    .navbar a {
+        font-size:11px
+    }
 }
 @media (max-width:768px){
 .page-section{
@@ -89,6 +96,18 @@ li a {
     right:20% !important;
     opacity:1 !important;
 }
+.navbar-brand{
+    position: fixed;
+    left: 0;
+    margin-left: 41px;
+}
+.menu-area ul{
+    width: 60vw;
+    position: absolute;
+    left: 0;
+    margin-top: 34px;
+    transition: .1s linear;
+}
 .navbar-nav{
     left: 100% ;
    visibility: hidden ;
@@ -97,14 +116,20 @@ li a {
 .title-header {
    
     width: 80% !important;
-   
+
     top: 17% !important;
 margin-left:10px
 }
 }
 @media (max-width:425px){
   
-
+    .navbar-brand{
+        margin-left: 20px;
+    }
+    .menu-area ul{
+        width: 80vw;
+    
+    }
     .sinais{
         height: 100% !important;
     
@@ -130,7 +155,27 @@ margin-left:10px
         font-size: 15px ;
        
     }
-
+    .footer-bottom{
+        flex-direction: column !important;
+        height: auto !important;
+        width: auto;
+        text-align: left !important;
+    }
+    .footer-informations{
+        width:auto !important;
+        
+    }
+    .footer-bottom{
+        gap:20px;
+        padding: 20px 15px !important;
+    }
+    .footer-social{
+        width:100%;
+        
+    }
+.title-header{
+    font-size: 30px !important;
+}
 
 }
 @media (max-width:320px){
@@ -146,11 +191,12 @@ margin-left:10px
 }
 .menutoggler{
    visibility: visible;
-    background-color: red;
+    background-color: black;
     height: auto;
     flex-direction: column !important;
     padding: 20px 10px;
     transition: .1s linear !important;
+    opacity: .9;
 }
 li a:hover{
     background-color: white;
@@ -202,6 +248,7 @@ li{
 }
 li a{
     color:white
+
 }
 h2{
     font-family: 'Italiana', serif;
@@ -226,6 +273,7 @@ p,span{
     overflow: hidden;
 }
 .filter{
+    display: none;
   position: absolute;
   /* background-color:rgb(37, 20, 20) ; */
   z-index:-1;
@@ -291,7 +339,8 @@ p,span{
 }
 header{
     height: 100vh;
-    background-image:url( https://img.freepik.com/fotos-premium/jesus-anda-sobre-a-agua-jesus-anda-sobre-o-mar-belo-por-do-sol-generative-ai_888418-402.jpg?w=900);
+    background-image:url(/images/christian-cross-nature.jpg);
+    /* background-image:url( https://img.freepik.com/fotos-premium/jesus-anda-sobre-a-agua-jesus-anda-sobre-o-mar-belo-por-do-sol-generative-ai_888418-402.jpg?w=900); */
     background-position: center;
     background-size: cover;
 }
@@ -301,8 +350,9 @@ header{
     position:absolute;
     text-align: justify;
     width:30%;
-    font-size:25px;
+    font-size:35px;
     top:30%;
+    font-family: 'Comfortaa', cursive;
    
 }
 .header-info{
@@ -343,12 +393,40 @@ hr{
     opacity: 1;
     transition: 1.2s;
 }
+/* area de edição dos cards */
 .description{
     position: absolute;
     opacity:0;
     z-index: 99;
     top: 0;
     backdrop-filter: blur(5px);
+    padding: 0 10px;
+    
+}
+.description p{
+    text-align: justify;
+}
+.description span{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    width: 100%;
+    display: flex;
+
+}
+span a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Italiana', italic;
+    border-bottom:1px solid gray;
+}
+span a:hover{
+   border-bottom:white 2px solid;
+   color:gray;
+   transition:.3s;
 }
 /*
 #miracle-1{
@@ -406,14 +484,24 @@ hr{
     margin-top: 20px;
     position: relative;
 
-
-
 }
-
-#sobre p{
+.filter-sobre{
+    position:absolute;
+    background-color: rgb(126, 130, 126);
+    top:0;
+    opacity:0.5;
+   
+}
+.cover-page h2{
+    z-index: 2 !important;
+}
+#sobre p,
+#cristo p,
+#nascer p{
     color:rgb(255, 255, 255);
     position:relative;
     font-weight:600;
+    z-index: 2;
     
 }
 
@@ -451,15 +539,62 @@ top: 0;
 filter: drop-shadow(5px 5px 4px #8f8f8f);
 }
 
-
+footer{
+    background-color: #6d5948;
+}
+footer hr{
+    background-color:white;
+    height: 3px;
+    width:100%;
+    border:none;
+    
+}
+.copy{
+    color:white;
+    font-size: 10px;
+    margin-left:10px
+}
 .footer-top{
     background-color: #d0b7a2;
    
 }
 .footer-bottom{
     background-color: #6d5948;
-    height: 50px;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 50px;
+    height: 200px;
+}
+.footer-informations{
+    width:400px;
+    
+}
+.info-ct-main span{
+    justify-content: flex-end;
+    font-size:12px;
+    font-weight: lighter;
+    
+}
+.footer-informations h3{
+    font-size:20px;
+    text-align: justify;
+}
+.footer-text span{
+    text-transform:uppercase;
+}
+.rede-ar{
+    margin-top:10px;
+    font-size: 30px;
+}
+.rede-ar i{
+    border-bottom: 3px solid transparent;
+}
+.rede-ar i:hover{
+    color:gray;
+    border-bottom:3px solid white;
+    transition:.3s
 }
 .tst{align-self: flex-end;
     height:1px;
